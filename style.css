@@ -55,7 +55,7 @@ html, body, h1, h2, h3, p, figure, section, article {
 }
 
 body {
-    background: linear-gradient(to bottom, var(--skyblue) 0%,var(--skyblue) 21.5%, #ffffff 23.5%, #ffffff 100%)
+    background: linear-gradient(to bottom, var(--skyblue) 0%,var(--skyblue) 19.5%, #ffffff 21.5%, #ffffff 100%)
 }
 
 .nav-container {
@@ -534,5 +534,116 @@ figure {
     justify-content: center;
     align-items: center;
     background-image: url("svg/info4.svg");
+}
+
+.user-reviews {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-s-12, 48px);
+    align-self: stretch;
+    background: var(--yimi-day-bg-light, #FFF);
+    overflow: hidden;
+}
+
+.user-reviews h2 {
+    color: var(--yimi-day-text-tertiary, #1D222B);
+    text-align: center;
+    font-family: "SF Pro Rounded";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    align-self: stretch;
+}
+
+.carrousell {
+    display: flex;
+    max-width: 1060px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+.carrousell:hover {
+  animation-play-state: paused;
+}
+
+
+.evaluation {
+    display: flex;
+    height: 180px;
+    min-width: 320px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    border: 0px solid var(--yimi-day-input-border, #D8DEE6);
+    background: var(--yimi-day-bg-light, #FFF);
+    box-shadow: 0px 0px 50px 0.15px rgba(30, 47, 64, 0.10);
+}
+
+.evaluation aside {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.evaluation p {
+    overflow: hidden;
+    color: var(--yimi-day-text-primary, #333B48);
+    text-overflow: ellipsis;
+    font-family: "SF Pro Rounded";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.evaluation article {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.evaluation article p {
+    color: var(--yimi-day-text-primary, #333B48);
+    font-family: "SF Pro Rounded";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.evaluation article a {
+    color: var(--yimi-day-text-brand, #0051FF);
+    font-family: "SF Pro Rounded";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; 
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.evaluation figure img {
+    width: 16px;
+    height: 16px;
 }
 
